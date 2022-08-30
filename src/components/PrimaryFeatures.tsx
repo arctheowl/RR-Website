@@ -12,27 +12,27 @@ import screenshotVatReturns from '../images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Dashboards',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      "Keep track of everything you need to succeed. If you have data you need to visualise, we can help turn it into useful information you can act on.",
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'Custom Solutions',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "Not all solutions are equal. Together we can find the perfect solution for you, whether that's a custom webapp, automation script or off the shelf solution.",
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Automation',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "Helping you automate many of the tasks that get in the way of your workflow. Say goodbye to repetitive tasks that suck up productive hours of the day.",
     image: screenshotVatReturns,
   },
   {
     title: 'Reporting',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      "Easily export your data in any form you want. Reporting so clean you won't have to wade through many different sheets to make important decisions.",
     image: screenshotReporting,
   },
 ]
@@ -57,7 +57,7 @@ export function PrimaryFeatures() {
 
   return (
     <section
-      id="features"
+      id="services"
       aria-label="Features for running your books"
       className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
     >
@@ -72,11 +72,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Services
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Whether you need a custom dashboard, to automate a report or to combine data to create never before seen information we have a solution for you.
           </p>
         </div>
         <Tab.Group

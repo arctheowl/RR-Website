@@ -24,18 +24,12 @@ export function Hero() {
         automation get in contact and we will be able to help you.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Get 6 months free</Button>
         <button className="group items-center justify-center rounded-full py-2 px-4 text-sm text-slate-700 ring-1 ring-slate-200 hover:text-slate-900 hover:ring-slate-300 focus:outline-none focus-visible:outline-blue-600 focus-visible:ring-slate-300 active:bg-slate-100 active:text-slate-600">
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <svg
-              aria-hidden="true"
-              className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
-            >
-              <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
-            </svg>
-            <p className="ml-5">Watch video</p>
+          <a href="#services">
+            <p className="">Services We Offer</p>
           </a>
         </button>
+        <Button href="/register">Contact Us</Button>
       </div>
       <div className="md: h-60"></div>
     </Container>

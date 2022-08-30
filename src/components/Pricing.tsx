@@ -4,7 +4,7 @@ const pricing = {
   tiers: [
     {
       title: "Freelancer",
-      price: 24,
+      price: "$",
       frequency: "/month",
       description: "The essentials to provide your best work for clients.",
       features: [
@@ -18,7 +18,7 @@ const pricing = {
     },
     {
       title: "Startup",
-      price: 32,
+      price: "$$",
       frequency: "/month",
       description: "A plan that scales with your rapidly growing business.",
       features: [
@@ -33,7 +33,7 @@ const pricing = {
     },
     {
       title: "Enterprise",
-      price: 48,
+      price: "$$$",
       frequency: "/month",
       description: "Dedicated support and infrastructure for your company.",
       features: [
@@ -56,7 +56,7 @@ function classNames(...classes: any) {
 
 const Pricing = () => {
   return (
-    <div className="mx-auto max-w-7xl bg-white py-24 px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl bg-white py-24 px-4 sm:px-6 lg:px-8"  id="pricing">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none lg:text-6xl">
         Pricing plans for teams of all sizes
       </h2>

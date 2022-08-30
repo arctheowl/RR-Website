@@ -9,7 +9,7 @@ const Contact = () => {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
+    <div className="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24" id="contact">
       <div className="relative mx-auto max-w-xl">
         <svg
           className="absolute left-full translate-x-1/2 transform"
@@ -79,11 +79,10 @@ const Contact = () => {
         </svg>
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Contact sales
+            Contact Us
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-500">
-            Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-            massa dictumst amet. Sapien tortor lacus arcu.
+            If any of this seems interesting or something that would be helpful for you please get in touch. The most useful message would be if you could outline the solution you are interested in and why. If you are unsure which solution is best for you then a good explanation of the problem your facing will help us have a more productive exhange.
           </p>
         </div>
         <div className="mt-12">
@@ -160,7 +159,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="sm:col-span-2">
+            {/* <div className="sm:col-span-2">
               <label
                 htmlFor="phone-number"
                 className="block text-sm font-medium text-gray-700"
@@ -191,7 +190,7 @@ const Contact = () => {
                   placeholder="+44 7910012345"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
