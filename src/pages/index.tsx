@@ -22,16 +22,20 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <Hero />
-      <PrimaryFeatures />
-      <SecondaryFeatures />
-      <Transform />
-      {/* <CallToAction /> */}
-      <Pricing />
-      <Faqs />
-      <Contact />
-      <Footer />
+      <div className=" relative">
+        <header className="fixed w-screen z-50 bg-white shadow-md">
+          <Header />
+        </header>
+        <Hero />
+        <PrimaryFeatures />
+        <SecondaryFeatures />
+        <Transform />
+        {/* <CallToAction /> */}
+        <Pricing />
+        <Faqs />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 };

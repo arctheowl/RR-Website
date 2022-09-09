@@ -33,7 +33,7 @@ const Contact = () => {
                 y={0}
                 width={4}
                 height={4}
-                className="text-gray-200"
+                className="text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600"
                 fill="currentColor"
               />
             </pattern>

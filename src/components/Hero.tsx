@@ -3,8 +3,8 @@ import { Container } from "./Container";
 
 export function Hero() {
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32">
-      <h1 className="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+    <Container className="pt-48 md:pb-16 text-center lg:pt-32 md:h-screen">
+      <h1 className="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl md:pt-44">
         Software{" "}
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
