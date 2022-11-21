@@ -2,7 +2,6 @@ import { Popover, Transition } from "@headlessui/react";
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
-import { Container } from "./Container";
 import { Fragment } from "react";
 import { NavLink } from "./NavLink";
 import logoImage from "../images/logos/RapidReportLogo.jpg";
@@ -80,6 +79,7 @@ function MobileNavigation() {
             <MobileNavLink href="#services">Features</MobileNavLink>
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
             <MobileNavLink href="#faq">FAQ's</MobileNavLink>
+            <MobileNavLink href="#contact">Contact Us</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/login">Demo</MobileNavLink>
           </Popover.Panel>
@@ -101,9 +101,9 @@ const Header = () => {
 
         <div className="hidden md:flex md:w-full md:justify-center md:gap-x-6 md:pl-52">
           <NavLink href="#services">Services</NavLink>
-          <NavLink href="#testimonials">Testimonials</NavLink>
           <NavLink href="#pricing">Pricing</NavLink>
           <NavLink href="#faq">FAQ's</NavLink>
+          <NavLink href="#contact">Contact Us</NavLink>
         </div>
       </div>
       <div className="items-center gap-x-5 md:flex md:gap-x-8">
