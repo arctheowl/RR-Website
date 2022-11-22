@@ -78,7 +78,7 @@ const Contact = () => {
           />
         </svg>
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:pt-10">
             Contact Us
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-500">
