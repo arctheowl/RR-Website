@@ -123,7 +123,7 @@ const Transform = () => {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             Automation Calculator
           </h2>
-          <p className="mx-auto mt-6 w-2/3 text-lg tracking-tight text-blue-100">
+          <p className="mx-auto mt-6 text-lg tracking-tight text-blue-100 md:w-2/3">
             Many organisations are still using manual processes to complete
             tasks that could be automated. This calculator will help you to
             understand the potential savings that could be made by automating

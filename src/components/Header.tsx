@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 import { Fragment } from "react";
-import { NavLink } from "./NavLink";
 import logoImage from "../images/logos/RRIconWithNameSide.png";
 import Button from "./Button";
 
@@ -46,7 +45,7 @@ function MobileNavigation() {
   return (
     <Popover>
       <Popover.Button
-        className="relative z-10 flex h-20 w-32 items-center justify-center [&:not(:focus-visible)]:focus:outline-none"
+        className="relative z-10 mt-5 flex h-10 w-32 items-center justify-center"
         aria-label="Toggle Navigation"
       >
         {({ open }) => <MobileNavIcon open={open} />}
@@ -76,7 +75,7 @@ function MobileNavigation() {
             as="div"
             className="relative top-full mt-4 flex flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 "
           >
-            <MobileNavLink href="#services">Features</MobileNavLink>
+            <MobileNavLink href="#services">Services</MobileNavLink>
             <MobileNavLink href="#calc">Calculator</MobileNavLink>
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
             <MobileNavLink href="#faq">FAQ's</MobileNavLink>
@@ -94,23 +93,32 @@ const Header = () => {
   return (
     <nav className="flex md:relative md:z-50 md:justify-center md:gap-52">
       <div className="flex items-center md:mr-56 md:gap-x-12">
-        <div className="relative h-20 w-28 md:h-24 md:w-44">
+        <div className="relative h-20 w-28 pl-10 md:h-24 md:w-44 md:pl-0">
           <Link href="#" aria-label="Home">
             <Image src={logoImage} alt={"logo"} className="scale-150 pt-5" />
           </Link>
         </div>
 
         <div className="hidden md:flex md:w-full md:justify-center md:gap-x-6 md:pl-52">
-          <NavLink href="#services">Services</NavLink>
-          <NavLink href="#calc">Calculator</NavLink>
-          <NavLink href="#pricing">Pricing</NavLink>
-          <NavLink href="#faq">FAQ's</NavLink>
-          <NavLink href="#contact">Contact Us</NavLink>
+          <a href="#services" className="text-xl">
+            Services
+          </a>
+          <a href="#calc" className="text-xl">
+            Calculator
+          </a>
+          <a href="#pricing" className="text-xl">
+            Pricing
+          </a>
+          <a href="#faq" className="text-xl">
+            FAQ's
+          </a>
+          <a href="#contact" className="text-xl">
+            Contact Us
+          </a>
         </div>
       </div>
       <div className="items-center gap-x-5 md:flex md:gap-x-8">
         <div className="hidden md:block">
-          {/* <NavLink href="/login">Sign in</NavLink> */}
           <Button href="#">
             <span>Free Demo</span>
           </Button>

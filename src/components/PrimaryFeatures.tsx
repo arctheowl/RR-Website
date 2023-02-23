@@ -70,15 +70,17 @@ export function PrimaryFeatures() {
         unoptimized
       />
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Services
-          </h2>
-          <p className="mx-auto mt-6 w-1/2 text-lg tracking-tight text-blue-100">
-            Whether you need a custom dashboard, to automate a report or to
-            combine data to create never before seen information we have a
-            solution for you.
-          </p>
+        <div className="mx-auto max-w-2xl md:text-center xl:max-w-none">
+          <div className="grid grid-cols-1 gap-3">
+            <h2 className="font-display mx-auto mt-3 text-3xl text-white sm:text-4xl md:mt-0 md:text-5xl">
+              Services
+            </h2>
+            <p className="mx-auto mt-6 text-lg tracking-tight text-blue-100">
+              Whether you need a custom dashboard, to automate a report or to
+              combine data to create never before seen information we have a
+              solution for you.
+            </p>
+          </div>
         </div>
         <Tab.Group
           as="div"

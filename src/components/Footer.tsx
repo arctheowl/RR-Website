@@ -1,28 +1,26 @@
-import { Container } from "./Container";
 import { NavLink } from "./NavLink";
 
 export function Footer() {
   return (
     <footer className="bg-slate-50">
-      <Container>
-        <div className="py-16">
-          <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#services">Services</NavLink>
-              <NavLink href="#calc">Caclulator</NavLink>
-              <NavLink href="#faq">FAQ</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-              <NavLink href="#contact">Contact Us</NavLink>
-            </div>
-          </nav>
-        </div>
-        <div className="flex-col border-t border-slate-400/10 py-10 text-center sm:flex-row-reverse sm:justify-between">
-          <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} Rapid Reporting. All
-            rights reserved.
-          </p>
-        </div>
-        {/* <div className="flex gap-x-6">
+      <div className="p-10">
+        <nav className="mt-10 text-sm" aria-label="quick links">
+          <div className="-my-1 flex md:justify-center md:gap-x-6">
+            <NavLink href="#services">Services</NavLink>
+            <NavLink href="#calc">Caclulator</NavLink>
+            <NavLink href="#faq">FAQ</NavLink>
+            <NavLink href="#pricing">Pricing</NavLink>
+            <NavLink href="#contact">Contact Us</NavLink>
+          </div>
+        </nav>
+      </div>
+      <div className="flex-col border-t border-slate-400/10 py-10 text-center sm:flex-row-reverse sm:justify-between">
+        <p className="mt-6 text-sm text-slate-500 sm:mt-0">
+          Copyright &copy; {new Date().getFullYear()} Rapid Reporting. All
+          rights reserved.
+        </p>
+      </div>
+      {/* <div className="flex gap-x-6">
             <Link
               href="https://twitter.com"
               className="group"
@@ -48,7 +46,6 @@ export function Footer() {
               </svg>
             </Link>
           </div> */}
-      </Container>
     </footer>
   );
 }

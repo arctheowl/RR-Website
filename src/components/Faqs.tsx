@@ -74,7 +74,7 @@ export function Faqs() {
         unoptimized
       />
       <Container className="relative">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="mx-auto mb-6 -mt-10 max-w-2xl md:mb-0 md:mt-0 lg:mx-0">
           <h2
             id="faq-title"
             className="font-display text-3xl tracking-tight text-gray-100 sm:text-4xl"
@@ -88,7 +88,7 @@ export function Faqs() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2"
+          className="mx-auto grid max-w-2xl grid-cols-1 gap-8 md:mt-16 lg:max-w-none lg:grid-cols-2"
         >
           {faqs.map((column, columnIndex) => (
             <li key={columnIndex}>
