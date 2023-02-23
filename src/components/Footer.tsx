@@ -1,7 +1,4 @@
-import Link from "next/link";
-
 import { Container } from "./Container";
-import Logo from "../images/logos/RapidReportLogo.jpg";
 import { NavLink } from "./NavLink";
 
 export function Footer() {
