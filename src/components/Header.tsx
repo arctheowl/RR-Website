@@ -121,7 +121,7 @@ const Header = () => {
       </div>
       <div className="items-center gap-x-5 md:flex md:gap-x-8">
         <div className="hidden md:block">
-          <Button href="https://demo.rapidreports.org/">
+          <Button target="_blank" href="https://demo.rapidreports.org/">
             <span>Free Demo</span>
           </Button>
         </div>

@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           name="description"
           content="For all your custom software needs. Need a custom dashboard, webapp or automation get in contact and we will be able to help you."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.png" />
       </Head>
       <div className=" relative">
         <header className="fixed z-50 w-screen bg-white shadow-md">
