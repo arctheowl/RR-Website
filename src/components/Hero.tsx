@@ -29,7 +29,9 @@ export function Hero() {
             <p className="">Services We Offer</p>
           </a>
         </button>
-        <Button href="#contact">Contact Us</Button>
+        <Button target={""} href="#contact">
+          Contact Us
+        </Button>
       </div>
       <div className="md: h-60"></div>
     </Container>
