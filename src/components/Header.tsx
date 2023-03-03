@@ -81,7 +81,9 @@ function MobileNavigation() {
             <MobileNavLink href="#faq">FAQ's</MobileNavLink>
             <MobileNavLink href="#contact">Contact Us</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="#">Demo</MobileNavLink>
+            <MobileNavLink href="https://demo.rapidreports.org/">
+              Demo
+            </MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -119,7 +121,7 @@ const Header = () => {
       </div>
       <div className="items-center gap-x-5 md:flex md:gap-x-8">
         <div className="hidden md:block">
-          <Button href="#">
+          <Button href="https://demo.rapidreports.org/">
             <span>Free Demo</span>
           </Button>
         </div>
