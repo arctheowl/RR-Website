@@ -31,8 +31,8 @@ const Home: NextPage = () => {
         <SecondaryFeatures />
         <Transform />
         {/* <CallToAction /> */}
-        <Pricing />
-        <Faqs />
+        {/* <Pricing /> */}
+        {/* <Faqs /> */}
         <Contact />
         <Footer />
       </div>
