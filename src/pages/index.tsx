@@ -13,11 +13,6 @@ import Transform from "../components/Calc";
 import { useEffect } from "react";
 
 const Home: NextPage = () => {
-  useEffect(() => {
-    // Initialize Google Tag Manager with your GTM ID
-    initializeGoogleTagManager("AW-11415047370");
-  }, []);
-
   return (
     <>
       <Head>
