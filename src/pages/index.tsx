@@ -10,8 +10,14 @@ import Pricing from "../components/Pricing";
 import { PrimaryFeatures } from "../components/PrimaryFeatures";
 import { SecondaryFeatures } from "../components/SecondaryFeatures";
 import Transform from "../components/Calc";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    // Initialize Google Tag Manager with your GTM ID
+    initializeGoogleTagManager("AW-11415047370");
+  }, []);
+
   return (
     <>
       <Head>
@@ -41,3 +47,6 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+function initializeGoogleTagManager(arg0: string) {
+  throw new Error("Function not implemented.");
+}
