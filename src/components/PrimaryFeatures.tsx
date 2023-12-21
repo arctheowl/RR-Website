@@ -7,7 +7,7 @@ import { Container } from "./Container";
 import backgroundImage from "../images/background-features.jpg";
 import demoMainPage from "../images/screenshots/demoMainPage.png";
 import mapScreenShot from "../images/screenshots/mapScreenShot.png";
-import screenshotReporting from "../images/screenshots/reporting.png";
+import screenshotReporting from "../images/screenshots/reportsScreenShot.png";
 import screenshotVatReturns from "../images/screenshots/vat-returns.png";
 
 const features = [
@@ -23,14 +23,14 @@ const features = [
       "Not all solutions are equal. Together we can find the perfect solution for you, whether that's a custom webapp, automation script or off the shelf solution.",
     image: mapScreenShot,
   },
+  // {
+  //   title: "Automation",
+  //   description:
+  //     "Helping you automate many of the tasks that get in the way of your workflow. Say goodbye to repetitive tasks that eat up productive hours of the day.",
+  //   image: screenshotVatReturns,
+  // },
   {
-    title: "Automation",
-    description:
-      "Helping you automate many of the tasks that get in the way of your workflow. Say goodbye to repetitive tasks that eat up productive hours of the day.",
-    image: screenshotVatReturns,
-  },
-  {
-    title: "Reporting",
+    title: "Reporting and Automation",
     description:
       "Easily export your data in any form you want. Reporting so clean you won't have to wade through many different sheets to make important decisions.",
     image: screenshotReporting,

@@ -7,6 +7,7 @@ import { Container } from "./Container";
 import demoMainPage from "../images/screenshots/demoMainPage.png";
 import mapScreenShot from "../images/screenshots/mapScreenShot.png";
 import screenshotProfitLoss from "../images/screenshots/profit-loss.png";
+import screenshotReporting from "../images/screenshots/reportsScreenShot.png";
 
 const features = [
   {
@@ -49,7 +50,7 @@ const features = [
       "Never lose track of what’s in stock with accurate inventory tracking.",
     description:
       "We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.",
-    image: screenshotProfitLoss,
+    image: screenshotReporting,
     icon: function InventoryIcon() {
       return (
         <>
