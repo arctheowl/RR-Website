@@ -77,8 +77,8 @@ function MobileNavigation() {
           >
             <MobileNavLink href="#services">Services</MobileNavLink>
             <MobileNavLink href="#calc">Calculator</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
-            <MobileNavLink href="#faq">FAQ's</MobileNavLink>
+            {/* <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="#faq">FAQ's</MobileNavLink> */}
             <MobileNavLink href="#contact">Contact Us</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="https://demo.rapidreports.org/">
@@ -108,12 +108,12 @@ const Header = () => {
           <a href="#calc" className="text-xl">
             Calculator
           </a>
-          <a href="#pricing" className="text-xl">
+          {/* <a href="#pricing" className="text-xl">
             Pricing
-          </a>
-          <a href="#faq" className="text-xl">
+          </a> */}
+          {/* <a href="#faq" className="text-xl">
             FAQ's
-          </a>
+          </a> */}
           <a href="#contact" className="text-xl">
             Contact Us
           </a>

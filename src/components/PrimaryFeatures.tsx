@@ -5,8 +5,8 @@ import clsx from "clsx";
 
 import { Container } from "./Container";
 import backgroundImage from "../images/background-features.jpg";
-import screenshotExpenses from "../images/screenshots/expenses.png";
-import screenshotPayroll from "../images/screenshots/basic_dashboard.png";
+import demoMainPage from "../images/screenshots/demoMainPage.png";
+import mapScreenShot from "../images/screenshots/mapScreenShot.png";
 import screenshotReporting from "../images/screenshots/reporting.png";
 import screenshotVatReturns from "../images/screenshots/vat-returns.png";
 
@@ -14,19 +14,19 @@ const features = [
   {
     title: "Dashboards",
     description:
-      "Keep track of everything you need to succeed. If you have data you need to visualise, we can help turn it into useful information you can act on.",
-    image: screenshotPayroll,
+      "Keep track of everything you need to succeed. If you have data you need to visualise, we can help turn it into useful information you can act on. Checkout our free demo above.",
+    image: demoMainPage,
   },
   {
     title: "Custom Solutions",
     description:
       "Not all solutions are equal. Together we can find the perfect solution for you, whether that's a custom webapp, automation script or off the shelf solution.",
-    image: screenshotExpenses,
+    image: mapScreenShot,
   },
   {
     title: "Automation",
     description:
-      "Helping you automate many of the tasks that get in the way of your workflow. Say goodbye to repetitive tasks that suck up productive hours of the day.",
+      "Helping you automate many of the tasks that get in the way of your workflow. Say goodbye to repetitive tasks that eat up productive hours of the day.",
     image: screenshotVatReturns,
   },
   {
