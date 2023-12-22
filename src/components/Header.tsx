@@ -101,7 +101,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="hidden md:flex md:w-full md:justify-center md:gap-x-6 md:pl-52">
+        <div className="hidden md:flex md:w-full md:justify-center md:gap-x-6 md:pl-96">
           <a href="#services" className="text-xl">
             Services
           </a>

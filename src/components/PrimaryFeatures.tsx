@@ -59,7 +59,7 @@ export function PrimaryFeatures() {
     <section
       id="services"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-blue-600 sm:py-32"
+      className="relative overflow-hidden bg-blue-600 sm:py-32 hidden md:flex"
     >
       <Image
         className="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"

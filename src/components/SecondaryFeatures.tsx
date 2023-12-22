@@ -5,8 +5,7 @@ import clsx from "clsx";
 
 import { Container } from "./Container";
 import demoMainPage from "../images/screenshots/demoMainPage.png";
-import mapScreenShot from "../images/screenshots/mapScreenShot.png";
-import screenshotProfitLoss from "../images/screenshots/profit-loss.png";
+import mapScreenShot from "../images/screenshots/mapScreenShot.png"
 import screenshotReporting from "../images/screenshots/reportsScreenShot.png";
 
 const features = [

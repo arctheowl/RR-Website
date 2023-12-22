@@ -29,12 +29,12 @@ const Transform = () => {
     switch (timePeriod) {
       case "Day":
         switch (length) {
-          case "hours":
+          case "Hours":
             setSavings(
               (salary / 52 / 40) * people * frequency * timeTaken * 1000 * 20
             );
             break;
-          case "minutes":
+          case "Minutes":
             setSavings(
               (salary / 52 / 40 / 60) *
                 people *
@@ -45,21 +45,21 @@ const Transform = () => {
             );
             break;
 
-          case "days":
+          case "Day":
             setSavings(0);
-          case "weeks":
+          case "Weeks":
             setSavings(0);
             break;
         }
         break;
       case "Week":
         switch (length) {
-          case "hours":
+          case "Hours":
             setSavings(
               (salary / 52 / 40) * people * frequency * timeTaken * 1000 * 4
             );
             break;
-          case "minutes":
+          case "Minutes":
             setSavings(
               (salary / 52 / 40 / 60) *
                 people *
@@ -69,34 +69,34 @@ const Transform = () => {
                 4
             );
             break;
-          case "days":
+          case "Days":
             setSavings(
               (salary / 52 / 40) * 8 * people * frequency * timeTaken * 1000 * 4
             );
             break;
-          case "weeks":
+          case "Weeks":
             setSavings(0);
             break;
         }
         break;
       case "Month":
         switch (length) {
-          case "hours":
+          case "Hours":
             setSavings(
               (salary / 52 / 40) * people * frequency * timeTaken * 1000
             );
             break;
-          case "minutes":
+          case "Minutes":
             setSavings(
               (salary / 52 / 40 / 60) * people * frequency * timeTaken * 1000
             );
             break;
-          case "days":
+          case "Days":
             setSavings(
               (salary / 52 / 40) * 8 * people * frequency * timeTaken * 1000
             );
             break;
-          case "weeks":
+          case "Weeks":
             setSavings((salary / 52) * people * frequency * timeTaken * 1000);
             break;
         }
@@ -130,7 +130,7 @@ const Transform = () => {
             your processes.
           </p>
           <div className="flex flex-col gap-10 pt-10 md:flex-row">
-            <div className="stats flex rounded-lg bg-gray-800 bg-opacity-70 p-10 shadow">
+            <div className="stat flex md:w-1/4 rounded-lg bg-gray-800 bg-opacity-70 p-10 shadow text-center">
               <div className="stat">
                 <div className=" -mt-5 text-xl text-white">
                   No. of People Doing Process
@@ -148,17 +148,20 @@ const Transform = () => {
                 />
               </div>
             </div>
-            <div className="stats flex rounded-lg bg-gray-800 bg-opacity-70 p-10 shadow">
+            <div className="stats flex md:w-1/4 rounded-lg bg-gray-800 bg-opacity-70 p-10 shadow">
               <div className="stat mx-auto flex flex-col gap-5">
                 <div className="-mt-5 text-xl text-white">Time to Complete</div>
                 <select
-                  defaultValue={"Hours"}
-                  className="select w-full max-w-xs bg-gray-800 bg-opacity-70"
+                  defaultValue={length}
+                  onChange={(e) => {
+                    setLength(e.target.value)
+                  }}
+                  className="w-full max-w-xs rounded bg-gray-800 bg-opacity-70 p-2 text-center"
                 >
-                  <option onClick={() => setLength("minutes")}>Minutes</option>
-                  <option onClick={() => setLength("hours")}>Hours</option>
-                  <option onClick={() => setLength("days")}>Days</option>
-                  <option onClick={() => setLength("weeks")}>Weeks</option>
+                  <option>Minutes</option>
+                  <option>Hours</option>
+                  <option>Days</option>
+                  <option>Weeks</option>
                 </select>
                 <div className="stat-value py-3 text-3xl">
                   {timeTaken} {length}
@@ -175,18 +178,21 @@ const Transform = () => {
                 />
               </div>
             </div>
-            <div className="stats flex rounded-lg bg-gray-800 bg-opacity-70 p-10  shadow">
+            <div className="stats flex md:w-1/4 rounded-lg bg-gray-800 bg-opacity-70 p-10 shadow">
               <div className="stat mx-auto flex flex-col gap-5">
                 <div className="-mt-5 text-xl text-white">
                   Frequency of Process
                 </div>
                 <select
                   defaultValue={"Week"}
-                  className="select w-full max-w-xs bg-gray-800 bg-opacity-70"
+                  onChange={(e) => {
+                    setTimePeriod(e.target.value)
+                  }}
+                  className="select w-full max-w-xs rounded bg-gray-800 bg-opacity-70 p-2 text-center"
                 >
-                  <option onClick={() => setTimePeriod("Day")}>Day</option>
-                  <option onClick={() => setTimePeriod("Week")}>Week</option>
-                  <option onClick={() => setTimePeriod("Month")}>Month</option>
+                  <option>Day</option>
+                  <option>Weeks</option>
+                  <option>Month</option>
                 </select>
                 <div className="stat-value text-3xl">
                   {frequency} Times a {timePeriod}
@@ -203,7 +209,7 @@ const Transform = () => {
                 />
               </div>
             </div>
-            <div className="stats rounded-lg bg-gray-800 bg-opacity-70 p-10  shadow">
+            <div className="stats md:w-1/4 rounded-lg bg-gray-800 bg-opacity-70 p-10 shadow text-center">
               <div className="stat">
                 <div className="-mt-5 text-xl text-white">Worker Salary</div>
                 <div className="stat-value py-16 text-3xl">
