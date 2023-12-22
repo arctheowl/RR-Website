@@ -43,57 +43,64 @@ function MobileNavIcon({ open }: any) {
 
 function MobileNavigation() {
   return (
-    <Popover>
-      <Popover.Button
-        className="relative z-10 mt-5 flex h-10 w-32 items-center justify-center"
-        aria-label="Toggle Navigation"
-      >
-        {({ open }) => <MobileNavIcon open={open} />}
-      </Popover.Button>
-      <Transition.Root>
-        <Transition.Child
-          as={Fragment}
-          enter="duration-150 ease-out"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="duration-150 ease-in"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
+    <nav className="flex h-20">
+      <Popover>
+        <Popover.Button
+          className="relative z-10 mt-5 flex h-10 w-10 items-center justify-center"
+          aria-label="Toggle Navigation"
         >
-          <Popover.Overlay className="fixed inset-0 bg-slate-300/50" />
-        </Transition.Child>
-        <Transition.Child
-          as={Fragment}
-          enter="duration-150 ease-out"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="duration-100 ease-in"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          <Popover.Panel
-            as="div"
-            className="relative top-full mt-4 flex flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 "
+          {({ open }) => <MobileNavIcon open={open} />}
+        </Popover.Button>
+        <Transition.Root>
+          <Transition.Child
+            as={Fragment}
+            enter="duration-150 ease-out"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="duration-150 ease-in"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
-            <MobileNavLink href="#services">Services</MobileNavLink>
-            <MobileNavLink href="#calc">Calculator</MobileNavLink>
-            {/* <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <Popover.Overlay className="fixed inset-0 bg-slate-300/50" />
+          </Transition.Child>
+          <Transition.Child
+            as={Fragment}
+            enter="duration-150 ease-out"
+            enterFrom="opacity-0 scale-95"
+            enterTo="opacity-100 scale-100"
+            leave="duration-100 ease-in"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-95"
+          >
+            <Popover.Panel
+              as="div"
+              className="relative top-full mt-4 flex flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 "
+            >
+              <MobileNavLink href="#services">Services</MobileNavLink>
+              <MobileNavLink href="#calc">Calculator</MobileNavLink>
+              {/* <MobileNavLink href="#pricing">Pricing</MobileNavLink>
             <MobileNavLink href="#faq">FAQ's</MobileNavLink> */}
-            <MobileNavLink href="#contact">Contact Us</MobileNavLink>
-            <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="https://demo.rapidreports.org/">
-              Demo
-            </MobileNavLink>
-          </Popover.Panel>
-        </Transition.Child>
-      </Transition.Root>
-    </Popover>
+              <MobileNavLink href="#contact">Contact Us</MobileNavLink>
+              <hr className="m-2 border-slate-300/40" />
+              <MobileNavLink href="https://demo.rapidreports.org/">
+                Demo
+              </MobileNavLink>
+            </Popover.Panel>
+          </Transition.Child>
+        </Transition.Root>
+      </Popover>
+      <div className="absolute h-20 w-28 pl-10 right-48">
+        <Link href="#" aria-label="Home">
+          <Image src={logoImage} alt={"logo"} className="scale-150 pt-5" />
+        </Link>
+      </div>
+    </nav>
   );
 }
 
-const Header = () => {
+const DesktopHeader = () => {
   return (
-    <nav className="flex md:relative md:z-50 md:justify-center md:gap-52">
+    <nav className="hidden md:relative md:z-50 md:flex md:justify-center md:gap-52">
       <div className="flex items-center md:mr-56 md:gap-x-12">
         <div className="relative h-20 w-28 pl-10 md:h-24 md:w-44 md:pl-0">
           <Link href="#" aria-label="Home">
@@ -125,12 +132,21 @@ const Header = () => {
             <span>Free Demo</span>
           </Button>
         </div>
-
-        <div className="absolute right-10 -mr-1 md:hidden">
-          <MobileNavigation />
-        </div>
       </div>
     </nav>
+  );
+};
+
+const Header = () => {
+  return (
+    <>
+      <nav className="hidden md:flex">
+        <DesktopHeader />
+      </nav>
+      <nav className="md:hidden">
+        <MobileNavigation />
+      </nav>
+    </>
   );
 };
 
