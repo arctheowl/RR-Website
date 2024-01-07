@@ -89,7 +89,7 @@ function MobileNavigation() {
           </Transition.Child>
         </Transition.Root>
       </Popover>
-      <div className="absolute h-20 w-28 pl-10 right-48">
+      <div className="absolute right-48 h-20 w-28 pl-10">
         <Link href="#" aria-label="Home">
           <Image src={logoImage} alt={"logo"} className="scale-150 pt-5" />
         </Link>
@@ -101,8 +101,8 @@ function MobileNavigation() {
 const DesktopHeader = () => {
   return (
     <nav className="hidden md:relative md:z-50 md:flex md:justify-center md:gap-52">
-      <div className="flex items-center md:mr-56 md:gap-x-12">
-        <div className="relative h-20 w-28 pl-10 md:h-24 md:w-44 md:pl-0">
+      <div className="flex items-center md:mx-56 md:gap-x-12">
+        <div className="relative h-20 w-28 md:h-24 md:w-44">
           <Link href="#" aria-label="Home">
             <Image src={logoImage} alt={"logo"} className="scale-150 pt-5" />
           </Link>
