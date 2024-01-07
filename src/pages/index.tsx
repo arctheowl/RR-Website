@@ -30,10 +30,10 @@ const Home: NextPage = () => {
         <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
-        <Transform />
+        {/* <Transform /> */}
         {/* <CallToAction /> */}
         {/* <Pricing /> */}
-        {/* <Faqs /> */}
+        <Faqs />
         <Contact />
         <Footer />
       </div>
