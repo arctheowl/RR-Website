@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { init } from "@socialgouv/matomo-next";
 import "~/styles/globals.css";
 
-const MATOMO_URL = process.env.NEXT_PUBLIC_MATOMO_URL;
-const MATOMO_SITE_ID = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
+const MATOMO_URL = process.env.NEXT_PUBLIC_MATOMO_URL || "";
+const MATOMO_SITE_ID = process.env.NEXT_PUBLIC_MATOMO_SITE_ID || "";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   useEffect(() => {
